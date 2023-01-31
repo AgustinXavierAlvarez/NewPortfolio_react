@@ -1,0 +1,32 @@
+.Main-lista{
+    display: flex;
+    width: 100%;
+    border: rgb(255, 182, 87) solid 2px;
+    box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+}
+
+.Data-lista{
+    display: flex;
+    justify-content: space-between;
+    margin:0vw 1vw;
+    width: 100%;
+    align-items: center;
+}
+
+.Data-lista h5,.Data-lista h6{
+    display: block;
+}
+
+.Enlace_pagina{
+    margin-right:1vw ;
+}
+@media ((max-width:770px) and (min-width:375px)){
+    .Main-lista{
+        display: flex;
+        width: 90%;
+        border: rgb(255, 182, 87) solid 2px;
+        box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+    }
+    
+    
+}

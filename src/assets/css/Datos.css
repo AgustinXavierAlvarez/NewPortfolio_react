@@ -1,0 +1,95 @@
+
+:root{
+    --ColorPri:rgb(176, 160, 114); 
+    --ColorSeq: rgb(84, 28, 86);
+    --ColorTer: rgb(90, 39, 63);
+    --ColorCua:rgb(163, 159, 147);
+    --ColorQui: rgb(255, 182, 87);
+}
+  
+.Presentacion-datos{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Main-datos{
+    display: flex;
+    justify-content: center;
+    margin:2vw;
+    align-items:stretch;
+}
+
+.Imagen-datos img{
+    max-width:40vw ;
+    border-radius: 10px;
+    filter: brightness(0.8);
+    box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+}
+/* box-shadow: 0 8px 8px -4px lightblue; */
+
+.Carta-datos{
+    display:flex;
+    flex-direction: column;
+}
+
+.Imagen-datos{
+    margin-right:1vw;
+}
+
+.Skills-datos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.List-skills{
+    display: flex;
+}
+
+.List-skills ul{
+    margin: 0 2vw;
+}
+
+.Button-datos-cv{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.Button-datos-cv button{
+    border-radius: 10px;
+    margin-top: 2vw;
+    box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+    border: none;
+    color: var(--ColorCua);
+    background-color: var(--ColorTer) ;
+    padding: 1.5vw;
+}
+
+.Button-datos-cv button a{
+    color: var(--ColorCua);
+    text-decoration: none;
+}
+
+@media (max-width:375px) {
+    .Imagen-datos{
+        display: none;
+    }
+    .Carta-datos{
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .List-skills {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+}
+@media ((max-width:770px) and (min-width:375px)){
+    .Imagen-datos{
+        display: none;
+    }
+}

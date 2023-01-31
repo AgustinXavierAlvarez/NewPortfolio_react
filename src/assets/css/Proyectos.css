@@ -1,0 +1,25 @@
+.Main-proyectos{
+    display: flex;
+
+}
+
+.Enlace-Listas{
+    width: 100%;
+}
+
+
+@media (max-width:375px) {
+    .Main-proyectos{
+        flex-direction: column;
+        width: 90%;
+    }
+    
+    
+  }
+
+@media ((max-width:770px) and (min-width:375px)){
+    .Main-proyectos{
+        flex-direction: column;
+        width: 100%;
+    }
+}

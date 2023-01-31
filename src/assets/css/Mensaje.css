@@ -1,0 +1,57 @@
+:root{
+    --ColorPri:rgb(176, 160, 114); 
+    --ColorSeq: rgb(84, 28, 86);
+    --ColorTer: rgb(90, 39, 63);
+    --ColorCua:rgb(163, 159, 147);
+    --ColorQui: rgb(255, 182, 87);
+}
+.Section-mensaje{
+    display:flex;
+    flex-direction: column;
+    margin: 2vw 0;
+}
+
+.Section-mensaje input,.Section-mensaje textarea{
+    min-width: 300px;
+    border: none;
+    color: var(--ColorCua);
+    background-color: var(--ColorSeq);
+}
+
+.Section-mensaje textarea{
+    max-width: 500px;
+}
+
+.Section-mensaje input{
+    padding: 1vw 2vw;
+}
+
+.Section-mensaje input[type='submit']{
+    background-color: var(--ColorTer);
+    min-width: 100px;
+    padding:1vw 2vw;
+    box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+    border-radius:8px ;
+}
+
+.Section-redes{
+    width: 70%;
+}
+.Main-mensaje{
+    padding: 1vw 3vw;
+    border: rgb(255, 182, 87) solid 2px;
+    box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+}
+
+@media ((max-width:770px) and (min-width:375px)){
+    .Main-mensaje{
+        padding: 1vw;
+        border: rgb(255, 182, 87) solid 2px;
+        box-shadow:0px 0px 8px  3px rgb(78, 77, 77);
+        width: 95%;
+    }
+
+    .Section-mensaje input,.Section-mensaje textarea{
+        min-width: 200px;
+    }
+}

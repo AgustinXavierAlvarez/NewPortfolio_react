@@ -1,0 +1,103 @@
+
+:root{
+    --ColorPri:rgb(176, 160, 114); 
+    --ColorSeq: rgb(84, 28, 86);
+    --ColorTer: rgb(90, 39, 63);
+    --ColorCua:rgb(163, 159, 147);
+    --ColorQui: rgb(255, 182, 87);
+}
+.Main-redes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom:2vw;
+}
+
+.Section-mensaje{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#Redes a{
+    font-size: 5vw;
+    margin:1vw 2vw ;
+    color: var(--azul);
+}
+
+/* Efecto redes de pagina*/
+.Box{
+    position: relative;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: inherit;
+    align-items: center;
+    background: var(--ColorSeq);
+    border-radius: 5px;
+    overflow: hidden;
+}
+.Box .Red{
+    color:black;
+    font-size: 4rem;
+    position:relative;
+    z-index: 1;
+}
+.Box::after{
+    content: '';
+    position: absolute;
+    background: var(--ColorCua);
+    inset:4px;
+    
+}
+.Box::before{
+    content:'';
+    position: absolute;
+    width: 200%;
+    
+    height:300%;
+    background:linear-gradient(var(--ColorCua),var(--ColorTer));
+    animation: rotacion 4s linear infinite;
+}
+@keyframes rotacion {
+    0%{
+        transform: rotate(8deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#Redes{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.Red{
+    z-index: 2;
+}
+
+/*Efecto redes de pagina */
+.Red:hover{
+    animation:share .25s forwards;
+}
+@keyframes share {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+    100%{
+        transform: scale(1.3);
+    }
+}
+@media ((max-width:770px) and (min-width:375px)){
+    .Box{
+        height: 100%;
+    }
+}
+
